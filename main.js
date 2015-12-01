@@ -17,9 +17,13 @@ var get = function (uri, auth) {
                'Authorization': ('Bearer ' + auth)
            }},
            function (error, response, body) {
-               if (error) reject(error);
-               if (response.statusCode == 401) reject("Unauthorized");
-               fulfill(body);
+               if (error){
+                   reject(error);
+               } else if (response.statusCode == 401) {
+                   reject("Unauthorized");
+               } else {
+                   fulfill(body);
+               }
            }
        )
     });

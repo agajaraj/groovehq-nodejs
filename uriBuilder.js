@@ -15,7 +15,7 @@ e.buildUri = function (object, params) {
                 }
             }
         }
-        fulfill("https://api.groovehq1.com/v1/" + object + (params ? post : ""));
+        fulfill("https://api.groovehq.com/v1/" + object + (params ? post : ""));
     });
 }
 
