@@ -1,0 +1,29 @@
+{
+  "name": "groovehq",
+  "version": "0.1.0",
+  "description": "API Wraper for groovehq",
+  "main": "main.js",
+  "dependencies": {
+    "request": "^2.65.0",
+    "promise": "^7.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agajaraj/groovehq-nodejs.git"
+  },
+  "keywords": [
+    "groovehq",
+    "groove",
+    "ticketing"
+  ],
+  "author": "Gajaraj Aravindakumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agajaraj/groovehq-nodejs/issues"
+  },
+  "homepage": "https://github.com/agajaraj/groovehq-nodejs#readme"
+}
