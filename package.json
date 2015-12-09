@@ -1,6 +1,6 @@
 {
   "name": "groovehq",
-  "version": "0.1.0.1",
+  "version": "0.1.2",
   "description": "API Wraper for groovehq",
   "main": "main.js",
   "dependencies": {

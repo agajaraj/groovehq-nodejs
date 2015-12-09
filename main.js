@@ -71,6 +71,7 @@ Groove.prototype.getTickets = function (assignee, customer, page, per_page, stat
  * @param per_page
  */
 Groove.prototype.getMessages = function (ticket_number, page, per_page) {
+    var _auth = this.auth;
     var _params = new Object();
     var _object = "tickets/"+ticket_number;
     page?_params.page = page : null;
@@ -88,6 +89,7 @@ Groove.prototype.getMessages = function (ticket_number, page, per_page) {
  * @param per_page
  */
 Groove.prototype.getCustomers = function (page, per_page) {
+    var _auth = this.auth;
     var _params = new Object();
     var _object = "customers";
     page?_params.page = page : null;
@@ -103,6 +105,7 @@ Groove.prototype.getCustomers = function (page, per_page) {
  * generate all mailboxes (pagination)
  */
 Groove.prototype.getMailboxes = function () {
+    var _auth = this.auth;
     var _object = "mailboxes";
     return builder.buildUri(_object).then(
         function (url) {
@@ -116,6 +119,7 @@ Groove.prototype.getMailboxes = function () {
  * @param mailbox
  */
 Groove.prototype.getTicketCounts = function (mailbox) {
+    var _auth = this.auth;
     var _params = new Object();
     var _object = "tickets/count";
     mailbox?_params.mailbox = mailbox : null;
@@ -131,6 +135,7 @@ Groove.prototype.getTicketCounts = function (mailbox) {
  * @param group
  */
 Groove.prototype.getAgents = function (group) {
+    var _auth = this.auth;
     var _params = new Object();
     var _object = "agents";
     group?_params.group = group : null;
